@@ -11,5 +11,14 @@ module UserService
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    config.middleware.use ExceptionNotification::Rack,
+                          email: {
+                            email_prefix: Rails.env,
+                            sender_address: '"Exception Notifier" <jadhavkavita206@gamil.com>',
+                            exception_recipients: ["kavitama@thoughtworks.com"]
+                            }
+
+
   end
 end

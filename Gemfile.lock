@@ -52,6 +52,9 @@ GEM
     concurrent-ruby (1.0.5)
     crass (1.0.3)
     erubis (2.7.0)
+    exception_notification (4.2.2)
+      actionmailer (>= 4.0, < 6)
+      activesupport (>= 4.0, < 6)
     execjs (2.7.0)
     ffi (1.9.23)
     globalid (0.4.1)
@@ -161,6 +164,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
+  exception_notification
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
