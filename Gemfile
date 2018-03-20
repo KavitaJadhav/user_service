@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'exception_notification'
+gem 'slack-notifier'
 gem 'letter_opener'
 
 group :development, :test do
