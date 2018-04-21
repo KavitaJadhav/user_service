@@ -1,0 +1,4 @@
+---
+:queues:
+  - priority
+  - default
