@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'exception_notification'
 gem 'slack-notifier'
 gem 'letter_opener'
+gem 'sidekiq'
 
 group :development, :test do
   gem 'byebug', platform: :mri
