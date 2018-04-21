@@ -14,6 +14,7 @@ gem 'slack-notifier'
 gem 'letter_opener'
 gem 'sidekiq'
 gem 'sidekiq-cron', '~> 0.6.3'
+gem 'whenever', require: false
 
 group :development, :test do
   gem 'byebug', platform: :mri
