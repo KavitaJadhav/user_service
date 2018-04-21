@@ -4,6 +4,11 @@ Sidekiq.default_worker_options['retry'] = 1
 
 Sidekiq.configure_server do |config|
   config.average_scheduled_poll_interval = 10 #default is 5 sec
+
+  schedule_file = "config/schedule.yml"
+  if File.exists?(schedule_file)
+    Sidekiq::Cron::Job.load_from_hash YAML.load_file(schedule_file)
+  end
 end
 
 Sidekiq::Extensions.enable_delay!

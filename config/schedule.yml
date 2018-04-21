@@ -1,0 +1,4 @@
+---
+print_numbers:
+  cron: "5 * * * *"
+  class: "NumberPrinterWorker"
