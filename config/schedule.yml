@@ -2,3 +2,6 @@
 print_numbers:
   cron: "5 * * * *"
   class: "NumberPrinterWorker"
+print_even_numbers:
+  cron: "10 * * * *"
+  class: "EvenNumberPrinterJob"
