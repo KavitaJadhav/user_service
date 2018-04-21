@@ -2,3 +2,5 @@
 :queues:
   - priority
   - default
+development:
+  :concurrency: 5
