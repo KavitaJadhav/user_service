@@ -15,6 +15,7 @@ gem 'letter_opener'
 gem 'sidekiq'
 gem 'sidekiq-cron', '~> 0.6.3'
 gem 'whenever', require: false
+gem 'prometheus-client'
 
 group :development, :test do
   gem 'byebug', platform: :mri
