@@ -21,6 +21,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
 end
 
+#Gems used in dev env only
 group :development do
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
