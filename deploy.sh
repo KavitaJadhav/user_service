@@ -2,7 +2,7 @@
 
 echo "Deployment started"
 
-bundle exec rake RAILS_ENV=test db:drop
-bundle exec rake RAILS_ENV=test db:create
-bundle exec rake RAILS_ENV=test db:migrate
-bundle exec rake RAILS_ENV=test db:seed
+RAILS_ENV=test bundle exec rake db:drop
+RAILS_ENV=test bundle exec rake db:create
+RAILS_ENV=test bundle exec rake db:migrate
+RAILS_ENV=test bundle exec rake db:seed
