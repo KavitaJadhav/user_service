@@ -2,4 +2,4 @@
 
 echo "Running unit tests"
 
-bundle exec rspec
+RAILS_ENV=test bundle exec rspec
