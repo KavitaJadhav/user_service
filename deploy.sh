@@ -1,6 +1,9 @@
 #!/bin/bash
 
 echo "Deployment started"
+whoami
+
+invoke: 'rvm:use', 'ruby-2.4.1@default'
 
 bundle install
 RAILS_ENV=test bundle exec rake db:drop
